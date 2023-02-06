@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///C:/Users/ADRIEN/Desktop/rapport%20de%20stage%20%E2%80%93%20Titre%20du%20site.html -->
+<html lang="fr-FR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>rapport de stage – Titre du site</title>
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://wordpress.com/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Titre du site » Flux" href="https://mrinformaticien5.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Titre du site » Flux des commentaires" href="https://mrinformaticien5.wordpress.com/comments/feed/">
+	<script async="" src="chrome-extension://kmhkepipobnjllejbafajoemahjejdcm/scripts/instana/eum.min.js" crossorigin="anonymous"></script><script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<div class="top-header">
+    <div class="container-wrapper">
+        <div class="top-bar-flex">
+            <div class="top-bar-left col-2">
+                <div class="date-bar-left">
+                                <span class="topbar-date">
+        February 6, 2023"    </span>
+                        </div>
+						
+            </div>
+            <div class="top-bar-right col-2">
+                <div class="aft-small-social-menu">
+                                                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="af-middle-header " data-background="">
+    <div class="container-wrapper">
+        <div class="af-middle-container">
+            <div class="logo">
+                        <div class="site-branding">
+                            <p class="site-title font-family-1">
+                    <a href="https://harlie-sullivan.top/" class="site-title-anchor" rel="home">
+                </p>
+            
+                            
+                    </div>
+
+                </div>
+
+                    <div class="header-promotion">
+                                             <div class="banner-promotions-wrapper">
+                    <div class="promotion-section">
+                        <div id="block-34" class="widget darknews-widget widget_block"><script>
+var snow_fall_rate = 5 //decrease for faster fall speed
+function snow() {  
+  var b = document.createElement('div')
+  var size = (Math.random()*10) + 5
+  b.className = 'flake'
+  b.style.width = size + 'px'
+  b.style.height = size + 'px'
+  b.style.position = 'fixed'
+  b.style.zIndex = '9999'
+  b.style.left = Math.random()*window.innerWidth + 'px'
+  b.style.top = '-20px'
+  b.style.borderRadius = '50%'
+  b.style.background = 'white' 
+  b.style.opacity = '.5' 
+  b.style.filter = Math.random() < .5 ? 'blur(3px)' : 'blur(1px)'
+  b.style.transition = Math.random < .5 ? snow_fall_rate*.75 + 's' : snow_fall_rate + 's'
+  b.style.transitionTimingFunction = 'ease-in'
+  document.body.appendChild(b)
+ 
+  setTimeout(function(){
+    var flakes = document.querySelectorAll('.flake')
+    var flake = flakes[flakes.length - 1]  
+    var flake_loc = flake.getBoundingClientRect()
+    flake.style.top = '105%'
+    flake.style.left = Math.random() < .5 ? flake_loc.left - 150 + 'px' : flake_loc.left + 150 + 'px'
+  },10)  
+ 
+  var flakes = document.getElementsByClassName('flake')
+  for(var i=0;i<flakes.length;i++){
+    if(flakes[i].getBoundingClientRect().top > window.innerHeight) {
+      flakes[i].remove()
+    }      
+  }
+  setTimeout(function(){ snow() },200)
+}
+snow()
+</script></div><div id="block-35" class="widget darknews-widget widget_block"><canvas id="canvas" height="1269" width="2560"></canvas>
+<script>
+// Get canvas
+var cvs = document.getElementById('canvas');
+
+// Canvas fills window
+cvs.height = window.innerHeight;
+cvs.width = window.innerWidth;
+
+// Get canvas context
+var ctx = cvs.getContext('2d');
+
+// Set font, size & number of columns
+var font = 'arial';
+var fontSize = 10;
+ctx.font = fontSize + 'px ' + font;
+var cols = cvs.width / fontSize;
+
+// Characters
+var charSet;
+charSet = 'ADRIEN'; // Hex
+charSet = charSet.split(''); // Convert string to array
+
+// One drop per column, row set randomly
+var drops = [];
+for (var col = 0; col < cols; col++)
+  drops[col] = Math.floor(Math.random() * cvs.height);
+
+// Call rain() every 25ms
+setInterval(rain, 25);
+
+function rain() {
+  // Background, black, translucent
+  /* This is key to the fade effect, clear the window with an alpha of 0.05, which doesn't clear it entirely but leaves existing text progressively dimmed with each subsequent call to rain()
+   */
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+  ctx.fillRect(0, 0, cvs.width, cvs.height);
+  
+  // For each column / drop
+  for (var col = 0; col < drops.length; col++) {
+    // Pick a random char
+    var char = charSet[Math.floor(Math.random() * charSet.length)];
+    // Pick a random colour
+    ctx.fillStyle = randColour();
+    // Draw the char
+    ctx.fillText(char, col * fontSize, drops[col] * fontSize);
+    // Randomly reset drop back to top row
+    if (Math.random() > 0.99)
+      drops[col] = 0;
+
+    drops[col]++; // Move drop down a row
+  }
+}
+
+function randColour()
+{
+  return'rgb(' + 
+    Math.floor(Math.random() * 256) + ',' + 
+    Math.floor(Math.random() * 256) + ',' + 
+    Math.floor(Math.random() * 256) + ')';
+}
+</script></div><div id="block-36" class="widget darknews-widget widget_block"><style>
+canvas {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+</style></div><div id="block-44" class="widget darknews-widget widget_block"></div><div id="block-45" class="widget darknews-widget widget_block"></div>                    </div>
+                </div>
+                                    </div>
+
+        </div>
+    </div>
+</div>
+	<script>
+
+</script><script src="./rapport de stage – Titre du site-bayle adrien_files/wp-emoji-release.min.js.téléchargement" type="text/javascript" defer=""></script><script src="./rapport de stage – Titre du site-bayle adrien_files/wp-emoji-release.min.js(1).téléchargement" type="text/javascript" defer=""></script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link crossorigin="anonymous" rel="stylesheet" id="all-css-0-1" href="./rapport de stage – Titre du site-bayle adrien_files/saved_resource" type="text/css" media="all">
+<style id="blockbase_font_faces-inline-css">
+/* latin-ext */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Regular-italic.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Regular-italic.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Medium-italic.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Medium-italic.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Bold-italic.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Bold-italic.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Regular.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Regular.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Medium.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Medium.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Bold.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Bold.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style id="wp-block-site-logo-inline-css">
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}.wp-block-site-logo.is-style-rounded{border-radius:9999px}
+</style>
+<style id="wp-block-site-title-inline-css">
+.wp-block-site-title a{color:inherit}
+.wp-block-site-title{font-size: var(--wp--custom--font-size--normal);font-weight: 700;text-transform: uppercase;}
+.wp-block-site-title a:where(:not(.wp-element-button)){text-decoration: none;}
+.wp-block-site-title a:where(:not(.wp-element-button)):hover{text-decoration: underline;}
+</style>
+<style id="wp-block-site-tagline-inline-css">
+.wp-block-site-tagline{font-size: var(--wp--custom--font-sizes--x-small);}
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}
+</style>
+<style id="wp-block-page-list-inline-css">
+.wp-block-navigation .wp-block-page-list{align-items:var(--navigation-layout-align,initial);background-color:inherit;display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation .wp-block-navigation-item{background-color:inherit}
+</style>
+<link crossorigin="anonymous" rel="stylesheet" id="all-css-12-1" href="./rapport de stage – Titre du site-bayle adrien_files/style.css" type="text/css" media="all">
+<style id="wp-block-navigation-inline-css">
+.wp-block-navigation{font-size: var(--wp--custom--font-size--normal);text-decoration: none;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+</style>
+<style id="wp-block-spacer-inline-css">
+.wp-block-spacer{clear:both}
+</style>
+<style id="wp-block-post-title-inline-css">
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title a{display:inline-block}
+.wp-block-post-title{font-size: min(max(3rem, 7vw), 4rem);font-weight: 700;line-height: 1.2;margin-bottom: var(--wp--custom--gap--vertical);}
+</style>
+<style id="wp-block-post-featured-image-inline-css">
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block}.wp-block-post-featured-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:transparent}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}
+</style>
+<style id="wp-block-heading-inline-css">
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}
+ol,ul{padding-left: calc( 2 * var(--wp--custom--gap--horizontal) );}
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+</style>
+<style id="wp-block-comment-template-inline-css">
+.wp-block-comment-template{box-sizing:border-box;list-style:none;margin-bottom:0;max-width:100%;padding:0}.wp-block-comment-template li{clear:both}.wp-block-comment-template ol{list-style:none;margin-bottom:0;max-width:100%;padding-left:2rem}.wp-block-comment-template.alignleft{float:left}.wp-block-comment-template.aligncenter{margin-left:auto;margin-right:auto;width:-moz-fit-content;width:fit-content}.wp-block-comment-template.alignright{float:right}
+</style>
+<style id="wp-block-comments-pagination-inline-css">
+.wp-block-comments-pagination>.wp-block-comments-pagination-next,.wp-block-comments-pagination>.wp-block-comments-pagination-numbers,.wp-block-comments-pagination>.wp-block-comments-pagination-previous{margin-bottom:.5em;margin-right:.5em}.wp-block-comments-pagination>.wp-block-comments-pagination-next:last-child,.wp-block-comments-pagination>.wp-block-comments-pagination-numbers:last-child,.wp-block-comments-pagination>.wp-block-comments-pagination-previous:last-child{margin-right:0}.wp-block-comments-pagination .wp-block-comments-pagination-previous-arrow{display:inline-block;margin-right:1ch}.wp-block-comments-pagination .wp-block-comments-pagination-previous-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-comments-pagination .wp-block-comments-pagination-next-arrow{display:inline-block;margin-left:1ch}.wp-block-comments-pagination .wp-block-comments-pagination-next-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-comments-pagination.aligncenter{justify-content:center}
+</style>
+<style id="wp-block-post-comments-form-inline-css">
+.wp-block-post-comments-form{box-sizing:border-box}.wp-block-post-comments-form[style*=font-weight] :where(.comment-reply-title){font-weight:inherit}.wp-block-post-comments-form[style*=font-family] :where(.comment-reply-title){font-family:inherit}.wp-block-post-comments-form[class*=-font-size] :where(.comment-reply-title),.wp-block-post-comments-form[style*=font-size] :where(.comment-reply-title){font-size:inherit}.wp-block-post-comments-form[style*=line-height] :where(.comment-reply-title){line-height:inherit}.wp-block-post-comments-form[style*=font-style] :where(.comment-reply-title){font-style:inherit}.wp-block-post-comments-form[style*=letter-spacing] :where(.comment-reply-title){letter-spacing:inherit}.wp-block-post-comments-form input[type=submit]{box-shadow:none;cursor:pointer;display:inline-block;overflow-wrap:break-word;text-align:center}.wp-block-post-comments-form input:not([type=submit]),.wp-block-post-comments-form textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments-form textarea{padding:calc(.667em + 2px)}.wp-block-post-comments-form .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments-form .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments-form .comment-form-author label,.wp-block-post-comments-form .comment-form-email label,.wp-block-post-comments-form .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments-form .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments-form .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments-form .comment-reply-title{margin-bottom:0}.wp-block-post-comments-form .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-button.aligncenter{text-align:center}
+</style>
+<style id="wp-block-button-inline-css">
+.wp-block-button__link{box-sizing:border-box;cursor:pointer;display:inline-block;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}.wp-block-button.is-style-outline>.wp-block-button__link,.wp-block-button .wp-block-button__link.is-style-outline{border:2px solid;padding:.667em 1.333em}.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color),.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color){color:currentColor}.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background),.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background){background-color:transparent;background-image:none}
+.wp-block-button .wp-block-button__link{background-color: var(--wp--custom--button--color--background);border-radius: var(--wp--custom--button--border--radius);border-color: var(--wp--custom--button--border--color);border-width: var(--wp--custom--button--border--width);border-style: var(--wp--custom--button--border--style);color: var(--wp--custom--button--color--text);font-size: var(--wp--custom--button--typography--font-size);font-weight: var(--wp--custom--button--typography--font-weight);line-height: var(--wp--custom--button--typography--line-height);padding-top: var(--wp--custom--button--spacing--padding--top);padding-right: var(--wp--custom--button--spacing--padding--right);padding-bottom: var(--wp--custom--button--spacing--padding--bottom);padding-left: var(--wp--custom--button--spacing--padding--left);}
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}
+.has-text-align-justify {
+	text-align:justify;
+}
+.wp-block-cover__image-background.has-parallax {
+	background-size: cover;
+}
+</style>
+<link crossorigin="anonymous" rel="stylesheet" id="all-css-52-1" href="./rapport de stage – Titre du site-bayle adrien_files/saved_resource(1)" type="text/css" media="all">
+<style id="wpcom-admin-bar-inline-css">
+
+			.admin-bar {
+				position: inherit !important;
+				top: auto !important;
+			}
+			.admin-bar .goog-te-banner-frame {
+				top: 32px !important
+			}
+			@media screen and (max-width: 782px) {
+				.admin-bar .goog-te-banner-frame {
+					top: 46px !important;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				.admin-bar .goog-te-banner-frame {
+					position: absolute;
+				}
+			}
+		
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--shadow--natural: 0 .2rem .3rem 0 rgba(0,0,0, 0.3), 0 .5rem .6rem 0 rgba(0,0,0, 0.4);--wp--preset--shadow--sharp: .5rem .5rem 0 0 rgba(0,0,0, 0.4);--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #333333;--wp--preset--color--secondary: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--tertiary: #f1f1f1;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 1rem;--wp--preset--font-size--medium: 1.375rem;--wp--preset--font-size--large: min(max(1.75rem, 5vw), 2.375rem);--wp--preset--font-size--x-large: min(max(2.25rem, 5vw), 3rem);--wp--preset--font-family--system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--courier-prime: 'Courier Prime', serif;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--helvetica-neue: 'Helvetica Neue','Helvetica', 'Arial', sans-serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--red-hat-display: 'Red Hat Display', sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', sans-serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--source-sans-pro: 'Source Sans Pro', sans-serif;--wp--preset--font-family--source-serif-pro: 'Source Serif Pro', sans-serif;--wp--preset--font-family--space-mono: 'Space Mono', sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--custom--alignment--aligned-max-width: 50%;--wp--custom--button--border--color: var(--wp--custom--color--foreground);--wp--custom--button--border--radius: 0;--wp--custom--button--border--style: solid;--wp--custom--button--border--width: 3px;--wp--custom--button--color--background: var(--wp--custom--color--foreground);--wp--custom--button--color--text: var(--wp--custom--color--background);--wp--custom--button--hover--color--text: var(--wp--custom--color--foreground);--wp--custom--button--hover--color--background: var(--wp--custom--color--background);--wp--custom--button--hover--border--color: var(--wp--custom--color--foreground);--wp--custom--button--spacing--padding--top: 0.667em;--wp--custom--button--spacing--padding--bottom: 0.667em;--wp--custom--button--spacing--padding--left: 1.333em;--wp--custom--button--spacing--padding--right: 1.333em;--wp--custom--button--typography--font-size: var(--wp--custom--font-size--normal);--wp--custom--button--typography--font-weight: 700;--wp--custom--button--typography--line-height: 2;--wp--custom--button--outline--color--text: var(--wp--custom--color--primary);--wp--custom--button--outline--color--background: var(--wp--custom--color--background);--wp--custom--button--outline--border--color: var(--wp--custom--color--primary);--wp--custom--button--outline--hover--color--text: var(--wp--custom--color--background);--wp--custom--button--outline--hover--color--background: var(--wp--custom--color--secondary);--wp--custom--button--outline--hover--border--color: var(--wp--custom--color--primary);--wp--custom--color--foreground: var(--wp--preset--color--primary);--wp--custom--color--background: var(--wp--preset--color--background);--wp--custom--color--primary: var(--wp--preset--color--primary);--wp--custom--color--secondary: var(--wp--preset--color--primary);--wp--custom--color--tertiary: var(--wp--preset--color--tertiary);--wp--custom--font-sizes--x-small: 1rem;--wp--custom--font-sizes--normal: 1.125rem;--wp--custom--font-sizes--huge: 3rem;--wp--custom--form--padding: 20px;--wp--custom--form--border--color: var(--wp--custom--color--foreground);--wp--custom--form--border--radius: 0;--wp--custom--form--border--style: solid;--wp--custom--form--border--width: 2px;--wp--custom--form--checkbox--checked--content: "\2715";--wp--custom--form--checkbox--checked--font-size: var(--wp--custom--font-sizes--x-small);--wp--custom--form--checkbox--checked--position--left: 3px;--wp--custom--form--checkbox--checked--position--top: 3px;--wp--custom--form--checkbox--checked--sizing--height: 12px;--wp--custom--form--checkbox--checked--sizing--width: 12px;--wp--custom--form--checkbox--unchecked--content: "";--wp--custom--form--checkbox--unchecked--position--left: 0;--wp--custom--form--checkbox--unchecked--position--top: 0.2em;--wp--custom--form--checkbox--unchecked--sizing--height: 16px;--wp--custom--form--checkbox--unchecked--sizing--width: 16px;--wp--custom--form--color--background: transparent;--wp--custom--form--color--box-shadow: none;--wp--custom--form--color--text: inherit;--wp--custom--form--label--spacing--margin--bottom: var(--wp--custom--gap--baseline);--wp--custom--form--label--typography--font-size: var(--wp--custom--font-sizes--x-small);--wp--custom--form--label--typography--font-weight: normal;--wp--custom--form--label--typography--letter-spacing: normal;--wp--custom--form--label--typography--text-transform: none;--wp--custom--form--typography--font-size: var(--wp--custom--font-sizes--normal);--wp--custom--gallery--caption--font-size: var(--wp--preset--font-size--small);--wp--custom--body--typography--line-height: 1.7;--wp--custom--heading--typography--font-weight: 500;--wp--custom--heading--typography--line-height: 1.125;--wp--custom--latest-posts--meta--color--text: var(--wp--custom--color--primary);--wp--custom--layout--content-size: 664px;--wp--custom--gap--baseline: 10px;--wp--custom--gap--horizontal: min(30px, 5vw);--wp--custom--gap--vertical: min(30px, 5vw);--wp--custom--navigation--submenu--border--color: var(--wp--custom--color--primary);--wp--custom--navigation--submenu--border--radius: var(--wp--custom--form--border--radius);--wp--custom--navigation--submenu--border--style: var(--wp--custom--form--border--style);--wp--custom--navigation--submenu--border--width: var(--wp--custom--form--border--width);--wp--custom--navigation--submenu--color--background: var(--wp--custom--color--background);--wp--custom--navigation--submenu--color--text: var(--wp--custom--color--foreground);--wp--custom--paragraph--dropcap--margin: 0 .2em .2em 0;--wp--custom--paragraph--dropcap--typography--font-size: var(--wp--preset--font-size--x-large);--wp--custom--paragraph--dropcap--typography--font-weight: 400;--wp--custom--post-author--typography--font-weight: normal;--wp--custom--post-comment--typography--font-size: var(--wp--custom--font-sizes--normal);--wp--custom--post-comment--typography--line-height: var(--wp--custom--body--typography--line-height);--wp--custom--pullquote--citation--typography--font-size: var(--wp--custom--font-sizes--x-small);--wp--custom--pullquote--citation--typography--font-family: inherit;--wp--custom--pullquote--citation--typography--font-style: normal;--wp--custom--pullquote--citation--typography--font-weight: 400;--wp--custom--pullquote--citation--spacing--margin--top: var(--wp--custom--gap--vertical);--wp--custom--pullquote--typography--text-align: left;--wp--custom--quote--citation--typography--font-size: var(--wp--custom--font-sizes--x-small);--wp--custom--quote--citation--typography--font-style: normal;--wp--custom--quote--citation--typography--font-weight: 400;--wp--custom--quote--typography--text-align: left;--wp--custom--separator--opacity: 1;--wp--custom--separator--width: 150px;--wp--custom--table--figcaption--typography--font-size: var(--wp--custom--font-sizes--x-small);--wp--custom--video--caption--text-align: center;--wp--custom--video--caption--margin: var(--wp--custom--gap--vertical) auto;--wp--custom--line-height--body: 1.7;}body { margin: 0;--wp--style--global--content-size: 664px;--wp--style--global--wide-size: 1128px;}.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: calc(2 * var(--wp--custom--gap--baseline)); }body { --wp--style--block-gap: calc(2 * var(--wp--custom--gap--baseline)); }body .is-layout-flow > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-flow > * + *{margin-block-start: calc(2 * var(--wp--custom--gap--baseline));margin-block-end: 0;}body .is-layout-constrained > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-constrained > * + *{margin-block-start: calc(2 * var(--wp--custom--gap--baseline));margin-block-end: 0;}body .is-layout-flex{gap: calc(2 * var(--wp--custom--gap--baseline));}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{background-color: var(--wp--custom--color--background);color: var(--wp--custom--color--foreground);font-family: var(--wp--preset--font-family--dm-sans);font-size: var(--wp--custom--font-sizes--normal);font-weight: 400;line-height: var(--wp--custom--body--typography--line-height);padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){color: var(--wp--custom--color--foreground);text-decoration: underline;}a:where(:not(.wp-element-button)):hover{text-decoration: none;}a:where(:not(.wp-element-button)):focus{text-decoration: none;}a:where(:not(.wp-element-button)):active{text-decoration: none;}h1{font-size: min(max(3rem, 7vw), 5rem);font-weight: var(--wp--custom--heading--typography--font-weight);line-height: 1.2;margin-top: var(--wp--custom--gap--vertical);margin-bottom: var(--wp--custom--gap--vertical);}h2{font-size: min(max(2.25rem, 6vw), 4.0625rem);font-weight: var(--wp--custom--heading--typography--font-weight);line-height: 1.2;margin-top: var(--wp--custom--gap--vertical);margin-bottom: var(--wp--custom--gap--vertical);}h3{font-size: var(--wp--preset--font-size--large);font-weight: var(--wp--custom--heading--typography--font-weight);line-height: 1.2;margin-top: var(--wp--custom--gap--vertical);margin-bottom: var(--wp--custom--gap--vertical);}h4{font-size: var(--wp--preset--font-size--large);font-weight: var(--wp--custom--heading--typography--font-weight);line-height: 1.4;margin-top: var(--wp--custom--gap--vertical);margin-bottom: var(--wp--custom--gap--vertical);}h5{font-size: var(--wp--custom--font-size--normal);font-weight: var(--wp--custom--heading--typography--font-weight);line-height: 1.4;margin-top: var(--wp--custom--gap--vertical);margin-bottom: var(--wp--custom--gap--vertical);}h6{font-size: var(--wp--preset--font-size--small);font-weight: var(--wp--custom--heading--typography--font-weight);line-height: 1.4;margin-top: var(--wp--custom--gap--vertical);margin-bottom: var(--wp--custom--gap--vertical);}.wp-element-button, .wp-block-button__link{background-color: var(--wp--custom--button--color--background);border-radius: var(--wp--custom--button--border--radius);border-width: 0;color: var(--wp--custom--button--color--text);font-family: var(--wp--preset--font-family--body-font);font-size: var(--wp--custom--button--typography--font-size);font-weight: var(--wp--custom--button--typography--font-weight);line-height: var(--wp--custom--button--typography--line-height);padding-top: calc( var(--wp--custom--button--spacing--padding--top) + var(--wp--custom--button--border--width) );padding-right: calc( var(--wp--custom--button--spacing--padding--right) + var(--wp--custom--button--border--width) );padding-bottom: calc( var(--wp--custom--button--spacing--padding--bottom) + var(--wp--custom--button--border--width) );padding-left: calc( var(--wp--custom--button--spacing--padding--left) + var(--wp--custom--button--border--width) );text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-helvetica-neue-font-family{font-family: var(--wp--preset--font-family--helvetica-neue) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-red-hat-display-font-family{font-family: var(--wp--preset--font-family--red-hat-display) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-source-sans-pro-font-family{font-family: var(--wp--preset--font-family--source-sans-pro) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+</style>
+<style id="core-block-supports-inline-css">
+.wp-container-4.wp-container-4{justify-content:flex-end;}.wp-container-5.wp-container-5{justify-content:space-between;}
+</style>
+<link crossorigin="anonymous" rel="stylesheet" id="all-css-56-1" href="./rapport de stage – Titre du site-bayle adrien_files/saved_resource(2)" type="text/css" media="all">
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link crossorigin="anonymous" rel="stylesheet" id="all-css-58-1" href="./rapport de stage – Titre du site-bayle adrien_files/global.css" type="text/css" media="all">
+<script id="notes-rest-common-js-extra">
+var wpNotesArgs = {"cacheBuster":"calypso-4917-8966-g5f8b6d6bc2","iframeUrl":"https:\/\/widgets.wp.com\/notifications\/","iframeAppend":"2","iframeScroll":"no","wide":"1"};
+</script>
+<script id="wpcom-actionbar-placeholder-js-extra">
+var actionbardata = {"siteID":"215326023","siteURL":"http:\/\/mrinformaticien5.wordpress.com","xhrURL":"https:\/\/mrinformaticien5.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"a79bb7317b","isLoggedIn":"1","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https:\/\/s0.wp.com\/wp-content\/js\/wpcom-proxy-request.js?ver=20211021","shortlink":"https:\/\/wp.me\/Pezu8n-8","i18n":{"followedText":"Les nouveaux articles de ce site appara\u00eetront d\u00e9sormais dans votre <a href=\"https:\/\/wordpress.com\/\">Lecteur<\/a>","foldBar":"R\u00e9duire cette barre","unfoldBar":"\u00c9tendre cette barre"}};
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="./rapport de stage – Titre du site-bayle adrien_files/saved_resource(3)"></script><style type="text/css"></style>
+<script type="text/javascript">
+	window.addEventListener( 'DOMContentLoaded', function() {
+		rltInitialize( {"token":"rlt-MnxvYTRFR25FaDdWNzhDclUwUUtaelRya0VQck5NYWQyRDE0VHh0S0ZQWGc5eVNmTHU4SkMxK2N3bm9wTnROakFCNkQvY3RWN1phRlBMbTljZmkzQTBWaVBuUmNYRVVSTkp4ZUJVSVA1UVpFTVlCcmVaejJnNkxJeWFtOTdSb3BwcWdNYUR4UEtOYzNSV3VEV2xEQnhuY0k1Q2gvZXlqUkxwQkRldVpGYTk2M0xmTFlEWEk5aDJQMFNBNUJQam50MnhWVGZ0WHFBNGlNeHA1K3NwYkUvNDVTck1iSE5nNXk4U2ZMdU1vd2RTUkh4K1ZMam5ocC9QRzAxY1lVS0RTeFh4Nmw0S3lPNTZjSTRJeEhTMXVBS0FBSWh3MjdsRlJEaEtRNkd5aSt4aHRDWT18ODMwMjQ1YzdlODlhOGNmODQ1ZTg4MjhjM2RhYzI5MmI3OTEzNDg0MzMwYTA3NzRlfGJkNmVhOGJlNzg0ZWJiOWQ0ZDE1Y2FkMjgzZTZlNzk5YmI1MWMxOGI4MDI2OWFhZTM4ZTY1MjM5ZmNmMjYzZTRiMmRkYjdkNzNmZTQyN2ZlOTcyNjIzZWZiYjg1OGU3MjJjYTdmZTc2NDZhODA5MzU1NWVkZTZjZTVhZDZmNDQ4","iframeOrigins":["https:\/\/widgets.wp.com"]} );
+	} );
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mrinformaticien5.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s0.wp.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://mrinformaticien5.wordpress.com/rapport-de-stage/">
+<link rel="shortlink" href="https://wp.me/Pezu8n-8">
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="rapport de stage">
+<meta property="og:url" content="https://mrinformaticien5.wordpress.com/rapport-de-stage/">
+<meta property="og:description" content="présentation du cadre général de l’entreprise : présentation de l’entreprise présentation du cadre général et forme juridique Organigramme Journal de bord : tableau Excel intégration de…">
+<meta property="article:published_time" content="2023-02-06T14:38:19+00:00">
+<meta property="article:modified_time" content="2023-02-06T14:49:11+00:00">
+<meta property="og:site_name" content="Titre du site">
+<meta property="og:image" content="https://mrinformaticien5.files.wordpress.com/2023/02/p1.jpg?w=200">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="200">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="fr_FR">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<meta name="twitter:text:title" content="rapport de stage">
+<meta name="twitter:image" content="https://mrinformaticien5.files.wordpress.com/2023/02/p1.jpg?w=240">
+<meta name="twitter:card" content="summary">
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="search" type="application/opensearchdescription+xml" href="https://mrinformaticien5.wordpress.com/osd.xml" title="Titre du site">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="Titre du site"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Articles de l’auteur, gestion des commentaires et gestion Titre du site."><meta name="msapplication-task" content="name=Modifier la page;action-uri=https://wordpress.com/page/mrinformaticien5.wordpress.com/8;icon-uri=https://s0.wp.com/i/icons/page.ico"><meta name="msapplication-task" content="name=Écrire un article;action-uri=https://wordpress.com/post/mrinformaticien5.wordpress.com;icon-uri=https://s0.wp.com/i/icons/post.ico"><meta name="msapplication-task" content="name=Modérer les commentaires;action-uri=https://mrinformaticien5.wordpress.com/wp-admin/edit-comments.php?comment_status=moderated;icon-uri=https://s0.wp.com/i/icons/comment.ico"><meta name="msapplication-task" content="name=Envoi d’un nouveau média;action-uri=https://mrinformaticien5.wordpress.com/wp-admin/media-new.php;icon-uri=https://s0.wp.com/i/icons/media.ico"><meta name="msapplication-task" content="name=Stats du site;action-uri=https://mrinformaticien5.wordpress.com/wp-admin/index.php?page=stats;icon-uri=https://s0.wp.com/i/icons/stats.ico"><meta name="description" content="présentation du cadre général de l&#39;entreprise : présentation de l&#39;entreprise présentation du cadre général et forme juridique Organigramme Journal de bord : tableau Excel intégration de photos fiches techniques bilan du stage : conclusion">
+<style media="print">#wpadminbar { display:none; }</style>
+	<style media="screen">
+	html { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+	}
+</style>
+	<link rel="icon" href="https://mrinformaticien5.files.wordpress.com/2023/02/p1.jpg?w=32" sizes="32x32">
+<link rel="icon" href="https://mrinformaticien5.files.wordpress.com/2023/02/p1.jpg?w=192" sizes="192x192">
+<link rel="apple-touch-icon" href="https://mrinformaticien5.files.wordpress.com/2023/02/p1.jpg?w=180">
+<meta name="msapplication-TileImage" content="https://mrinformaticien5.files.wordpress.com/2023/02/p1.jpg?w=270">
+	<script src="./rapport de stage – Titre du site-bayle adrien_files/w.js(1).téléchargement" type="text/javascript" async=""></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./rapport de stage – Titre du site-bayle adrien_files/hovercard.min.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./rapport de stage – Titre du site-bayle adrien_files/services.min.css"><link href="./rapport de stage – Titre du site-bayle adrien_files/actionbar.css" type="text/css" rel="stylesheet"><link href="./rapport de stage – Titre du site-bayle adrien_files/actionbar(1).css" type="text/css" rel="stylesheet"></head><body class="page-template-default page page-id-8 logged-in admin-bar no-customize-support wp-custom-logo wp-embed-responsive customizer-styles-applied highlander-enabled highlander-light has-launch-banner">
+	
+
+
+		
+
+	
+
+	
+	
+		
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+<a class="skip-link screen-reader-text" href="https://mrinformaticien5.wordpress.com/rapport-de-stage/#wp--skip-link--target">Aller au contenu principal</a><a class="skip-link screen-reader-text" href="file:///C:/Users/ADRIEN/Desktop/rapport%20de%20stage%20%E2%80%93%20Titre%20du%20site.html#wp--skip-link--target">Aller au contenu principal</a><div class="wp-site-blocks"><header class="wp-block-template-part">
+<div class="wp-block-group gapless-group is-layout-constrained">
+
+<div class="wp-block-group site-header site-header-linear alignfull is-content-justification-space-between is-layout-flex wp-container-5" style="padding-bottom:var(--wp--custom--gap--vertical);padding-top:var(--wp--custom--gap--vertical)">
+
+	
+	
+	
+
+	
+
+</div>
+
+
+</div>
+
+
+
+
+<div style="height:90px" aria-hidden="true" class="wp-block-spacer"></div>
+</header>
+
+
+<div class="wp-block-group is-layout-constrained">
+	<h1 style="margin-bottom:calc(2 * var(--wp--style--block-gap));" class="has-text-align-left wp-block-post-title">rapport de stage</h1>
+	
+</div>
+
+
+
+<main class="wp-block-group is-layout-flow" id="wp--skip-link--target">
+	<div class="entry-content wp-block-post-content is-layout-constrained">
+<h4 class="wp-block-heading"><strong><span style="text-decoration: underline">présentation du cadre général de l’entreprise</span> </strong> :</h4>
+
+
+<html>
+<head>
+<style>
+body {
+	color: red;
+}
+</style>
+</head>
+<ul>
+<li>présentation de l’entreprise </li>
+
+
+
+<li>présentation du cadre général et forme juridique</li>
+
+
+
+<li>Organigramme</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading"><strong><span style="text-decoration: underline">Journal de bord</span> : </strong></h4>
+
+
+
+<ul>
+<li>tableau Excel</li>
+
+
+
+<li>intégration de photos </li>
+
+
+
+<li>fiches techniques</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><span style="text-decoration: underline">bilan du stage</span> :</h3>
+
+
+
+<ul>
+<li>conclusion </li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p></p>
+</div>
+</main>
+
+
+
+<div class="wp-block-group is-layout-constrained">
+<div class="wp-block-comments-query-loop">
+	
+
+	
+
+	
+
+	
+</div>
+ 
+</div>
+
+
+<div class="site-footer-container wp-block-template-part">
+<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+	<div class="wp-block-group is-layout-constrained">
+		
+		<div class="wp-block-group is-layout-flow" style="padding-top:80px;padding-bottom:30px">
+			
+			
+			
+		</div>
+		
+	</div>
+	
+
+
+<div style="height:120px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+</div>
+<!-- wpcom_wp_footer -->
+
+		<style id="skip-link-styles">
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	</style>
+		<script>
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Aller au contenu principal';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	</script>
+		<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery(document).ready( function($) {
+			function doFollowingHover() {
+				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
+
+				$('#wp-admin-bar-follow > a').bind( 'mouseover.unfollow', function() {
+
+					$(this).html( "Ne plus suivre" ).parent( 'li' ).addClass( 'unfollow' );
+				});
+				$('#wp-admin-bar-follow > a').bind( 'mouseout.unfollow', function() {
+					$(this).html( "Abonn\u00e9\u2219e" ).parent( 'li' ).removeClass( 'unfollow' );
+				});
+			}
+							doFollowingHover();
+			
+			$('#wp-admin-bar-follow > a').click( function( e ) {
+				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
+
+				e.preventDefault();
+
+				var link = $( this ), li = $( '#wp-admin-bar-follow' ), timeout = 0;
+
+				if ( li.hasClass( 'subscribed' ) ) {
+					li.removeClass( 'subscribed' ).removeClass( 'unfollow' );
+					link.html( "Suivre" );
+
+					$('body').append( $( 'div.wpcom-bubble' ).removeClass( 'fadein' ) ).off( 'click.bubble' );
+
+					var action = 'ab_unsubscribe_from_blog';
+				} else {
+					li.addClass( 'subscribed' ).removeClass( 'unfollow' );
+					link.html( "Abonn\u00e9\u2219e" );
+
+						var left = 131 - link.width();
+						li.append( $( 'div.wpcom-bubble' ).css( { left: '-' + left + 'px' } ) );
+						$( 'div.bubble-txt', 'div.wpcom-bubble' ).html( "Les nouveaux articles de ce blog appara\u00eetront d\u00e9sormais dans \u003Ca target=\u0022_blank\u0022 href=\u0022http:\/\/fr.wordpress.com\/\u0022\u003Ele lecteur\u003C\/a\u003E. Vous pouvez g\u00e9rer les alertes que vous recevez par e-mail depuis la \u003Ca target=\u0022_blank\u0022 href=\u0022http:\/\/fr.wordpress.com\/following\/edit\/\u0022\u003Epage des abonnements\u003C\/a\u003E." );
+
+						$( 'div.wpcom-bubble.action-bubble' ).addClass( 'fadein' );
+
+						setTimeout( function() {
+							$('body').on( 'click.bubble touchstart.bubble', function(e) {
+								if ( !$(e.target).hasClass('wpcom-bubble') && !$(e.target).parents( 'div.wpcom-bubble' ).length )
+									hideBubble();
+							});
+							setTimeout( hideBubble, 15000 );
+						}, 500 );
+
+					var action = 'ab_subscribe_to_blog';
+					$('#wp-admin-bar-follow > a').bind( 'mouseout.shift', function() {
+						doFollowingHover();
+						$(this).unbind( '.shift' );
+					});
+				}
+
+				var nonce = link.attr( 'href' ).split( '_wpnonce=' );
+				nonce = nonce[1];
+
+				$.post( "https:\/\/mrinformaticien5.wordpress.com\/wp-admin\/admin-ajax.php", {
+					'action': action,
+					'_wpnonce': nonce,
+					'source': 'admin_bar',
+					'blog_id': 215326023				});
+			});
+		});
+	/* ]]> */
+	</script>
+<script src="./rapport de stage – Titre du site-bayle adrien_files/gprofiles.js.téléchargement" id="grofiles-cards-js"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":"e0d6bdeb899c4ba724e2ba2d3e91ba3a"};
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="./rapport de stage – Titre du site-bayle adrien_files/wpgroho.js.téléchargement"></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-e0d6bdeb899c4ba724e2ba2d3e91ba3a">
+	</div>
+	</div>
+<div id="report-form-window" style="display:none;"></div>	
+	
+<script>
+window.addEventListener( "load", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.css?v=20210915";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.js?v=20220329";
+	script.defer = true;
+	document.body.appendChild( script );
+} );
+</script>
+
+	<link crossorigin="anonymous" rel="stylesheet" id="screen-css-0-2" href="./rapport de stage – Titre du site-bayle adrien_files/style(1).css" type="text/css" media="screen">
+<script id="thickbox-js-extra">
+var thickboxL10n = {"next":"Suiv.\u00a0>","prev":"<\u00a0Pr\u00e9c.","image":"Image","of":"sur","close":"Fermer","noiframes":"Cette fonctionnalit\u00e9 requiert des iframes. Les iframes sont d\u00e9sactiv\u00e9es sur votre navigateur, ou alors il ne les accepte pas.","loadingAnimation":"https:\/\/s0.wp.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+</script>
+<script id="comment-like-js-extra">
+var comment_like_text = {"loading":"chargement\u2026","swipeUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/comment-likes\/js\/lib\/swipe.js?ver=20131008"};
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="./rapport de stage – Titre du site-bayle adrien_files/saved_resource(4)"></script>
+<script crossorigin="anonymous" src="./rapport de stage – Titre du site-bayle adrien_files/lodash.min.js.téléchargement" id="lodash-js"></script>
+<script id="lodash-js-after">
+window.lodash = _.noConflict();
+</script>
+<script id="tos-report-form-js-extra">
+var wpcom_tos_report_form = {"ajaxurl":"\/wp-admin\/admin-ajax.php","isLoggedoutUser":"","post_ID":"8","current_url":"https:\/\/mrinformaticien5.wordpress.com\/rapport-de-stage","report_this_content":"Signaler ce contenu"};
+</script>
+<script type="text/javascript">
+const launchBarUserData = {"blogId":215326023}
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="./rapport de stage – Titre du site-bayle adrien_files/saved_resource(5)"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="./rapport de stage – Titre du site-bayle adrien_files/w.js(1).téléchargement" defer=""></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['identifyUser', 222178345, 'mrinformaticien']);
+_tkq.push(['storeContext', {'blog_id':'215326023','blog_tz':'1','user_lang':'fr','blog_lang':'fr'}]);
+_stq.push(['view', {'blog':'215326023','v':'wpcom','tz':'1','user':'1','user_id':'222178345','post':'8','subd':'mrinformaticien5'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1mN3FZZmo1ciV5XXJsZ24wUjJacUxGNiVZTFVrRGNHdkxHbS8sQzF1dHQ9MGZsMmlHcy9iRTBzK0o1TnVxfD91Nkk3YWVtbmdrM0xWckhUUVotbn5DVl04dlNkMmc3RmNKV3xDcWQmcm1bZ0dbW0lxNmlEQnNOUk09SlQlQWQuUmUmbWglL09GczNGJkhCfGxfSzIsTTFVZWlnc0ZuY2gxOWx5cjdVaF1mY3ptU0YtRzZXWTgrXzRveXdnb0kvaXRCTzEwckNoMXdFVmZXYT9JZ2Fwcm81WXMmSWtiOUw9a21zVUtyZHA3dj0='}]);
+	</script><style>img#wpstats {
+			position: absolute !important;
+			clip: rect(0, 0, 0, 0);
+			padding: 0 !important;
+			border: 0 !important;
+			height: 0 !important;
+			width: 0 !important;
+			overflow: hidden;
+		}</style><img src="file://pixel.wp.com/g.gif?blog=215326023&amp;v=wpcom&amp;tz=1&amp;user=1&amp;user_id=222178345&amp;post=8&amp;subd=mrinformaticien5&amp;host=&amp;ref=&amp;rand=0.2928414656731544" alt="" id="wpstats">
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+ <style>
+      body {
+        background-color: orange
+      }
+
+
+<div class="comment-likes-overlay" style="display: none;"></div><script src="./rapport de stage – Titre du site-bayle adrien_files/actionbar.js.téléchargement" defer=""></script><script src="./rapport de stage – Titre du site-bayle adrien_files/actionbar.js(1).téléchargement" defer=""></script></body></html>
